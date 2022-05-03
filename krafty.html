@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Moje hobby</title>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<meta name="description" content="Świat piwa jest naprawdę fascynujący.Założę si, że nie raz cię zaskoczę"/>
+	<meta name="keywords" content="Piwo, najlepsze piwa, piwa kraftowe, radlery, piwa ciemnie, piwa pszeniczne, żywiec, carlsberg, kopania piwowarska"/>
+	<link rel="stylesheet" href="krafty.css" type="text/css"/>
+	<script>
+	window.onload= poczatek;
+	function poczatek(){
+	if(localStorage.Ipa)
+	localStorage.Ipa=localStorage.Ipa;
+	else
+	localStorage.Ipa=0;
+	if(localStorage.Pszeniczne)
+	localStorage.Pszeniczne=localStorage.Pszeniczne;
+	else
+	localStorage.Pszeniczne=0;
+	if(localStorage.Ciemne)
+	localStorage.Ciemne=localStorage.Ciemne;
+	else
+	localStorage.Ciemne=0;
+	if(localStorage.Radler)
+	localStorage.Radler=localStorage.Radler;
+	else
+	localStorage.Radler=0;
+	zmien_diva();
+	}
+	function zmien_diva(){
+	
+	var div=document.createElement('div');
+	
+	var tekst=document.createTextNode("Ipa: "+localStorage.Ipa+"  Pszeniczne: "+localStorage.Pszeniczne+"  Ciemne: "+localStorage.Ciemne+"  Radlery:"+localStorage.Radler);
+	
+	div.appendChild(tekst);
+	
+	var div2=document.getElementById("content");
+
+	var div3=document.getElementById("przycisk");
+
+	div2.insertBefore(div,div3);
+	
+	}
+	
+	
+	
+	
+	
+	
+	function zliczacz1(){
+	if(document.getElementById("Ipa").value>0)
+	{localStorage.Ipa=Number(localStorage.Ipa)+Number(document.getElementById("Ipa").value);
+zmien_diva();
+	}
+	
+	else
+	alert("Proszę podać liczbę większą od 0");
+	
+	}
+	
+	
+	
+	function zliczacz2(){
+	
+	if(document.getElementById("Pszeniczne").value>0)
+	{localStorage.Pszeniczne=Number(localStorage.Pszeniczne)+Number(document.getElementById("Pszeniczne").value);
+zmien_diva();
+	}
+	
+	else
+	alert("Proszę podać liczbę większą od 0");
+	
+	}
+	function zliczacz3(){
+	if(document.getElementById("Ciemne").value>0)
+	{localStorage.Ciemne=Number(localStorage.Ciemne)+Number(document.getElementById("Ciemne").value);
+	zmien_diva();
+	}
+	
+	else
+	alert("Proszę podać liczbę większą od 0");
+	
+	}
+	function zliczacz4(){
+	if(document.getElementById("Radlery").value>0)
+	{localStorage.Radlery=Number(localStorage.Radlery)+Number(document.getElementById("Radlery").value);
+	zmien_diva();
+	}
+	
+	else
+	alert("Proszę podać liczbę większą od 0");
+	
+	}
+	function podlicz(){
+	var liczba=Number(localStorage.Radler)+Number(localStorage.Ciemne)+Number(localStorage.Pszeniczne)+Number(localStorage.Ipa);
+
+	var text = document.createTextNode('Suma='+ liczba);
+	var div=document.createElement('div');
+	var div2=document.getElementById("content");
+	div.appendChild(text);
+	var div3=document.getElementById("przycisk");
+div2.insertBefore(div,div3);
+	}
+	
+	
+	</script>
+	
+	
+</head>
+<body>
+<div id="container">	
+<header>
+Piwa kraftowe oraz regionalne.
+
+</header>
+
+
+
+
+
+<nav>
+<div class="optionL"><div class="optionT"><a href="index.html">Strona główna</a></div></div>
+
+<div class="optionL"><div class="optionT"><a href="koncerny.html">Wielkie Koncerny</a></div>
+<ul>
+<li><div class="optionT"><a href="koncerny.html#kompania">Kompania Piwowarska</a></div></li>
+<li><div class="optionT"><a href="koncerny.html#zywiec">Grupa Żywiec</a></div></li>
+<li><div class="optionT"><a href="koncerny.html#carlsberg">Grupa Carslberg</a></div></li>
+</ul>
+</div>
+<div class="optionL"><div class="active"> Piwa kraftowe</div></div>
+<div class="optionL"> <div class="optionT"><a href="galeria.php">Galeria zdjęć</a> </div></div>
+	
+</nav>
+<div id="content">
+<h2>Rodzaje piwa</h2>
+Piwa można podzielić na 2 zasadnicze grupy. Piwa górnej fermentacji(ale) oraz dolnej fermentacji(lager). Z informacji zamieszczonych na 1 stronie wiemy, że te 2 są zdecydowanie bardziej popularne. Poniżej przedstawie kilku 
+reprezentantów z każdej z obu grup.
+<div class="rodzaj"> 
+<h3>Ipa</h3>
+IPA to styl, który wśród fanów piw rzemieślniczych cieszy się niesłabnącą popularnością. Wśród małych browarów  jest najczęściej warzonym stylem. Wiele osób zgodziłoby się z hasłem, że bez IPY nie było piwnej rewolucji.
+Ten styl można podzielić na następne 2 grupy:East Coast(Hazy Ipa) oraz West Coast.Oba te style wywodzą się z Usa. Ten pierwszy cechuje się umiarkowaną goryczką i wysoką chmielowością. Drugi natomiast jest chmielony na goryczkę.
+Nie jest to piwo dla osób zaczynających przygodę kraftami.Przedstawicielami tych styli są:Hazy Morning(Pinta)  oraz Atak chemilu(Pinta).
+ 
+</div>
+<div id="tekst1"><b>Nasza strona oferuje zliczanie ilości spożytych  piw, które nie są lagerami! Od teraz nie będziesz musiał(musiała) o tym pamiętać. Wystarczy, że wejdziesz i sprawdzisz. Po wpisaniu liczby i zatwierdzeniu, przeglądarka wygeneruje
+dane na dole strony. Baw się dobrze!!</b><br/>
+<input type="text" id="Ipa"/> 
+<input type="submit" value="Zatwierdź" onclick="zliczacz1()"/>
+</div>
+<div class="rodzaj">
+
+<h3>Piwa pszeniczne</h3>
+Piwa górnej fermentacji, w których w skład słodu oprócz jęczmienia wchodzi również pszenica. Możemy rozróżnić 2 główne rodzaje piw pszenicznych: niemiecki weizen oraz belgijski wibier. Różnice między tymi stylami wynikają z 
+zastosowanych drożdzy. Oba style wyrózniają się pieknymi aromatami, jednak są to zupełnie inne zapachy. W niemieckich odmianach łatwo wyczuć banana oraz goździki(nuty siarkowe występują równie często), natomiast wśród 
+belgijskich przedstawicieli dominuje kolendra oraz pomarańcz.Do najlepszych piw z tego stylu można zaliczyć: "Okocim klasyczna pszenica", "Amber Pszeniczniak" oraz "Kormoran Witbier".<br/>
+<b>A tego piwka, ile już wypiłes?</b><br/> 
+<input type="text" id="Pszeniczne"/> 
+<input type="submit" value="Zatwierdź" onclick="zliczacz2()"/>
+
+</div>
+ 
+<div class="rodzaj">
+<h3>Piwa ciemne</h3>
+Ten trunek jest jednym z najdłużej dojrzewających. Zawiera od 3% alkoholu, a w przypadku mocniejszych gatunków nawet do 12%.
+ Gama smakowa sięga od bardzo gorzkich po wyjątkowo słodkie. Często jednak kojarzy się przede wszystkim ze słodkimi piwami o aromacie czekolady.
+ Głownymi przedstawicielami stylu są: portery bałtyckie oraz koźlaki.
+  Portery  były kiedyś bardzo popularnymi piwami. Współcześnie ponownie coraz więcej Polaków po nie sięga. Ze względu na wysoką zawartość alkoholu, są idealne na zimowe wieczory.
+  Zawierają około 9% alkoholu, a ich barwa jest czarna niczym węgiel.Najabrdziej znanymi przedstawicielami są Żywiec porter oraz Okocim Porter.
+  Jeśli chodzi o koźlaki, to warto zauważyć, że zawierają dużo mniej alkoholu(około 6%). Ich barwa jest rubinowa. Najbardziej znany koxlak w Poslce to "Koźlak" warzyony w browarze Amber.
+   <br/>
+   <b>A tego piwka, ile już wypiłes?</b><br/>
+   <input type="text" id="Ciemne"/>
+<input type="submit" value="Zatwierdź" onclick="zliczacz3()"/>
+  
+ </div> 
+ 
+<div class="rodzaj">
+<h3>Radlery</h3>
+ Napoje niskoalkoholowe będącego połączeniem jasnego piwa i zwykle cytrusowej lemoniady lub innego napoju bezalkoholowego nazywamy radlerami( nazwa pochodzi z Niemiec). Proporcje składników
+ mogą wynosić 60% jasnego piwa i 40% lemoniady, chociaż występują także inne kombinacje. Radlery charakteryzują  walorami orzeźwiającymi.Konsumpcja tego rodzaju piwa wzrasta wraz ze wzrostem temperatury.
+ Radlery można podzielić ze względu na zawartośćalkoholu na 2 grupy: radlery akoholowe lub bezalkoholowe.
+ Wśród tych pierwszych prym wiedzie warka radler, natomiast, wśród drugich Lech Free.W tej  gałęzi rynku  zdecydowanie prowadzą koncerny. Niestety Małę browary nie są w stanie skutecznie walczyć cenami z kolosami. 
+<br/>
+<b>A tego piwka, ile już wypiłes?</b><br/><input type="text" id="Radlery"/> 
+<input type="submit" value="Zatwierdź" onclick="zliczacz4()"/> 
+ 
+ 
+ </div>
+
+
+<div id="przycisk">
+<input type="submit" value="Podlicz wszytkie" onclick="podlicz()"/>
+</div>
+
+<h2>Pinta</h2><div id="zdjecie"><img src="zdjecia/atak_chmielu.jpg" alt="Pinta"></div>
+Najbardziej rozpoznawalnym oraz najwiekszym browarem kraftowym w Polsce jest browar Pinta. Uważa się, że to oni zapoczątkowali piwną rewolucję w Polsce. Ich najbardziej znane piwo to "Atak Chmielu", warzone od 2011 roku.
+Na swoim koncie mają już ponad 200 unikatowych piw. Od 2019 warzą w własnym browarze w Wieprzu(przedtem kontraktowo warzyli w zaprzyjaźnionych browarach). Grono sympatyków pinty systematycznie rośnie. Może Ty również skusisz 
+się na ich specjały?
+
+
+</div>
+
+
+
+
+
+
+
+<footer>
+Dawid Rezmer nr 184250 &copy; Wszelkie prawa zastrzeżone.
+</footer>
+</div>
+</body>
+
+
+
+
+
+</html>

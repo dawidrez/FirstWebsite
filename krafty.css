@@ -1,0 +1,141 @@
+body{
+	background-color: #404040;
+	font-family:Arial, sans-serif;	
+	
+}
+#tekst1{
+	margin-top:10px;
+}
+.active{
+	color:#b300b3;
+	background-color:red;
+}
+input[type=text]{
+	padding:5px;
+}input[type=submit]{
+	padding:5px;
+	
+}
+#zdjecie
+{float:right;
+margin:20px;}
+
+
+#container{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	
+	
+	
+	
+	
+	
+	
+}
+a{
+	text-decoration:none;
+}
+#wynik{
+	display:none;
+}
+
+
+
+
+
+header{
+	color:white;
+	font-size:40px;
+	margin-top:15px;
+	font-weight:800;
+	
+	
+	
+	
+	
+	
+	
+}
+.optionT:hover{
+	color:red;
+
+cursor:	pointer;
+background-color: black;
+}
+
+
+nav{
+	
+	float: left;
+	width: 24%;
+	min-height: 300px;
+	padding:20px;
+	background-color: lightgray;
+	text-align: center;
+	font-size: 18px;
+	border-right: 2px dotted #666666;
+	
+	
+}#content{
+	float: left;
+	padding: 40px;
+	width: 60%;
+	background-color: #dedede;
+	
+	text-align: justify;
+	min-height:1000px;
+	
+	
+}
+footer{
+	
+	clear:both;
+	height:20px;
+	background:black;
+	color:white;
+	text-align:center;
+	
+	
+	
+}
+
+
+
+	.optionL{
+		padding:10px;
+	min-width:12%;
+	padding:10px;
+	border-bottom:3px dotted black;
+	}
+.lista {
+	font-size :18px;
+background-color:#b59826;
+border:0px;
+}
+
+	.lista:hover {
+		color: red;
+		
+		cursor: pointer;
+		background-color: black;
+	}
+	@media only screen and (max-width: 768px) {
+	
+
+	nav {
+		width:100%;
+		padding:4px;
+		margin:0px;
+		border-right: 0px;
+		
+	}
+	#content{width:100%;margin: 0px;padding:4px;}
+	
+	#zdjecie{display: none;}
+	
+	#container{width:100%;}
+	header{width:100%;font-size:25px;}
+	footer{width:100%;}
+}	
+	

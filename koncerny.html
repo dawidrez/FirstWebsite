@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+ <title>Moje hobby</title>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel ="stylesheet" href="koncerny.css" type="text/css"/>
+	<meta name="description" content="Świat piwa jest naprawdę fascynujący.Założę się, że nie raz cię zaskoczę"/>
+	<meta name="keywords" content="Piwo, najlepsze piwa, piwa kraftowe, radlery, piwa ciemnie, piwa pszeniczne, żywiec, carlsberg, kopania piwowarska"/>
+	<script>
+	window.onload= poczatek;
+function poczatek(){
+	if(sessionStorage.piwo_licznik)
+		zmien_diva();
+	else
+		sessionStorage.piwo_licznik='0';
+	if(sessionStorage.kom_piwo=='1')
+		sessionStorage.kom_piwo=1;
+	else
+	sessionStorage.kom_piwo='0';
+    if(sessionStorage.zywiec=='1')
+	sessionStorage.zywiec='1'
+    else
+	sessionStorage.zywiec='0';
+    if(sessionStorage.carlsberg=='1')
+			sessionStorage.carlsberg='1'
+	else
+		sessionStorage.carlsberg='0';
+}
+   function zmien_diva(){
+	 
+	var div=document.getElementById("sesion");
+	
+	if(sessionStorage.piwo_licznik=="0")
+	{div.innerHTML="Nie masz ochoty na piwo";
+	}
+	else if(sessionStorage.piwo_licznik=="1")
+	{
+	div.innerHTML="Masz  ochotę na piwo z jednego koncernu";
+	}
+	else if(sessionStorage.piwo_licznik=="2")
+	{
+	div.innerHTML="Masz  ochotę na piwa z dwóch koncernów";
+	}
+	else if(sessionStorage.piwo_licznik=="3")
+	div.innerHTML="Masz ochotę na piwa z trzech koncernów";
+	}
+	
+		
+			function sesion1(){
+	var liczba1=document.querySelector("input[name=answer1]:checked").value;
+	
+
+	if(liczba1=='yes1'&&sessionStorage.kom_piwo=='0')
+	 {sessionStorage.piwo_licznik++;
+	sessionStorage.kom_piwo++;
+	 
+	 zmien_diva();
+	 }
+	 else if(liczba1=='no1'&&sessionStorage.kom_piwo=='1')
+	 {sessionStorage.piwo_licznik--;
+	sessionStorage.kom_piwo--;
+	 zmien_diva()
+	 }
+			}
+	 function sesion2(){
+	var liczba2=document.querySelector("input[name=answer2]:checked").value;
+	
+	
+	if(liczba2=='yes2'&&sessionStorage.zywiec=='0')
+	 {sessionStorage.piwo_licznik++;
+	 sessionStorage.zywiec++;
+	 zmien_diva();
+	 }
+	 else if(liczba2=='no2'&&sessionStorage.zywiec=='1')
+	 {sessionStorage.piwo_licznik--;
+	sessionStorage.zywiec--;
+	 zmien_diva()
+	 }
+	 
+	}
+	function sesion3(){
+	var liczba3=document.querySelector("input[name=answer3]:checked").value;
+	
+	
+	if(liczba3=='yes3'&&sessionStorage.carlsberg=='0')
+	 {sessionStorage.piwo_licznik++;
+	 sessionStorage.carlsberg++;
+	 zmien_diva();
+	 }
+	 else if(liczba3=='no3'&&sessionStorage.carlsberg=='1')
+	 {sessionStorage.piwo_licznik--;
+	 sessionStorage.carlsberg--;
+	 zmien_diva()
+	 }
+	 
+	} </script>
+	</head>
+<body>
+<div id="container">	
+<header>
+Wielkie koncerny w Polsce
+
+</header>
+
+
+
+<nav>
+<div class="optionL"><a href="index.html"><div class="optionT">Strona główna</div></a>
+</div>  
+<div class="optionL" ><div class="active">Wielkie koncerny</div><ul>
+<li><div class="optionT"><a href='#kompania'>Kompania Piwowarska</a></div></li>
+<li><div class="optionT"><a href= '#zywiec'>Grupa Żywiec</a></div></li>
+<li><div class="optionT"><a href= '#carlsberg'>Grupa Carslberg</a></div></li>
+</ul></div> 
+<div class="optionL"> <a href="krafty.html"><div class="optionT">Piwa kraftowe</div> </a></div>
+<div class="optionL"><a href="galeria.php" ><div class="optionT">Galeria zdjęć</div> </a> </div>
+	</nav>
+	
+<div id="content">
+<h2 id="kompania">Kompania Piwowarska</h2><div class="zdjecie"><img src="zdjecia/zubr.jpg" alt="Kliknij, aby powiększyć"/></div>
+<p>Kompania Piwowarska skupia trzy browary o wieloletniej historii: Tyskie Browary Książęce (rok założenia - 1629), Browar  w Białymstoku (1768) i  Browar Wielkopolski w Poznaniu (1895). 
+To tam warzą  między innymi:
+<ul>
+<li> Żubra;</li>
+<li> Tyskie;</li>
+<li> Lecha;</li>
+<li> Dębowe;</li>
+<li> Redd’sa </li>
+<li> Książęce</li>
+</ul> Kompania piwowarska należy do japońskiego koncernu Asahi. Jeszcze kilka lat temu posiadali 45% całego rynku w Polsce.
+ Trzeba przyznać, brzmi to imponująco. Jednak od tamtego momentu sytematycznie tracą i pozostałe koncerny doganiają japońskiego giganta.
+<a  href="https://www.kp.pl/" target="_blank" >Kliknij tutaj jeżeli chcesz się dowiedzieć czegoś więcej.</a> <h3> Masz ochotę na piwko z tego koncernu ???</h3>
+<input type="radio" name="answer1" value="yes1"  id="yes1" onclick="sesion1()"/><label for="yes1">Tak</label>
+<input type="radio" name="answer1" value="no1"  id="no1" onclick="sesion1()" ><label for="no1">Nie</label>
+ 
+<div class="paragraf"><h2 id="zywiec">Grupa Żywiec</h2><div class="zdjecie"><img src="zdjecia/zywiec.jpg" alt="zywiec"/></div>
+Grupa Żywiec w swojej ofercie posiada: 13 styli piwnych, 12 marek i ponad 40 produktów. Marką flagową firmy jest Żywiec – jedno z najpopularniejszych polskich piw eksportowych. 
+Do koncernu należa również takie marki jak:
+<ul>
+<li> Heineken;</li>
+<li> Warka;</li>
+<li> Tatra;</li>
+<li> Królewskie(Polska centralna);</li>
+<li> Specjal(Pomorze) </li>
+<li> Leżajsk(Polska wschodnia)</li>
+</ul> 
+
+Swoje piwa warzą w:Warce, Elblągu, Leżajsku oraz Arcyksiążęcym Browarze w Żywcu i Browarze Zamkowym Cieszyn. <a  href="https://grupazywiec.pl/" target="_blank" >
+Tutaj znajdziesz więcej infomacji na temat ich specjalności.</a> <h3> Masz ochotę na piwko z tego koncernu ???</h3>
+<input type="radio" name="answer2" value="yes2"  id="yes2" onclick="sesion2()"/><label for="yes2">Tak</label>
+<input type="radio" name="answer2" value="no2"  id="no2" onclick="sesion2()" /><label for="no2">Nie</label>
+</div>
+<div class="paragraf"><h2 id="carlsberg">Carslberg Polska</h2><div class="zdjecie"><img src="zdjecia/harnas.jpg" alt="harnas"/></div>
+Najmniejszy z największych na polskim rynku. Chociaż piwo Carslberg jest kojarzone w całej Europie, to w Polsce nie cieszy się przesadną popularnością. Carslberg Polska to oczywiscie część zagranicznego koncernu. W Polsce
+warzą w Szczecinie, Brzesku oraz Sierpcu. Do najbardziej znanych marek z tej grupy należą:
+<ul>
+<li> Carslberg;</li>
+<li>Harnaś;</li>
+<li> Karmi;</li>
+<li> Kasztelan;</li>
+<li> Bossman </li>
+<li> Okocim</li>
+</ul> <a href="https://carlsbergpolska.pl/o-nas/carlsberg-polska/browary/" target="_blank">Link do oficjalnej strony</a>
+<h2>Masz ochotę na piwko z tego kocernu?</h2>
+<input type="radio" name="answer3" value="yes3"  id="yes3" onclick="sesion3()" /><label for="yes3">Tak</label>
+<input type="radio" name="answer3" value="no3"  id="no3" onclick="sesion3()" /><label for="no3">Nie</label>
+
+</div>
+<div class="paragraf">
+<div id="naglowek"><h2>Tabela najbardziej popularnych piw w Polsce.</h2></div>
+<div id="tabela">
+<div class="komorka1">Pozycja</div><div class="komorka2">Marka</div><div class="komorka3">Koncern</div><div style="clear:both"></div>
+<div class="komorka1">1</div><div class="komorka2">Żywiec Jasne Pełne</div><div class="komorka3">Grupa Żywiec</div><div style="clear:both"></div>
+
+<div class="komorka1">2</div><div class="komorka2">Żubr</div><div class="komorka3">Kompania Piwowarska</div><div style="clear:both"></div>
+<div class="komorka1">3</div><div class="komorka2">Tyskie </div><div class="komorka3">Komapania Piwowarska</div><div style="clear:both"></div>
+<div class="komorka1">4</div><div class="komorka2">Lech</div><div class="komorka3">Komapania Piwowarska</div><div style="clear:both"></div>
+<div class="komorka1">5</div><div class="komorka2">Warka</div><div class="komorka3">Grupa Żywiec</div><div style="clear:both"></div>
+
+</div>
+</div>
+
+ 
+
+ 
+<div id="sesion">
+Obecnie nie masz ochoty na rzadne piwko.
+</div> 
+</div>
+<footer>
+Dawid Rezmer nr 184250 &copy; Wszelkie prawa zastrzeżone.
+</footer>
+
+</div>
+</body>
+
+
+
+

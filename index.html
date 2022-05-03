@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ 
+
+<script>
+window.onload=usun;
+function usun(){
+var  usun=document.getElementById('Tekst2');
+
+usun.parentNode.removeChild(usun);
+
+}
+</script>
+
+<script  src="jquery2.js"></script>
+<script  src="imagemenu.js"> </script>
+<script >
+$(document).ready(function(){
+ $("#para td").mouseover(function(){
+  var idd=$(this).attr('id');
+  enlargeimg(idd);
+});
+$("#para td").mouseout(function(){
+    actualimg();
+});
+});
+</script>
+ <title>Moje hobby</title>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<meta name="description" content="Świat piwa jest naprawdę fascynujący.Założę si, że nie raz cię zaskoczę"/>
+	<meta name="keywords" content="Piwo, najlepsze piwa, piwa kraftowe, radlery, piwa ciemnie, piwa pszeniczne, żywiec, carlsberg, kopania piwowarska"/>
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<div id="container">	
+<header>
+Świat  Piwa
+
+</header>
+
+
+<nav>
+<div class="optionL"><div class="active">Strona główna</div></div>
+
+<div class="optionL"><div class="optionT"><a href="koncerny.html">Wielkie Koncerny</a></div>
+<ul>
+<li><div class="optionT"><a href="koncerny.html#kompania">Kompania Piwowarska</a></div></li>
+<li><div class="optionT"><a href="koncerny.html#zywiec">Grupa Żywiec</a></div></li>
+<li><div class="optionT"><a href="koncerny.html#carlsberg">Grupa Carslberg</a></div></li>
+</ul>
+</div>
+<div class="optionL"><div class="optionT"> <a href="krafty.html">Piwa kraftowe</a></div></div>
+<div class="optionL"> <div class="optionT"><a href="galeria.php">Galeria zdjęć</a> </div></div>
+	
+</nav>
+<div id="content">
+
+
+<div id="zdjecie1">
+<img src="zdjecia/piwo.webp" alt="piwo"/>
+
+</div>  
+
+ 
+
+
+
+<div id="Tekst2"><h1>Strona lepiej działa przy włączonym JS. Jeżeli chcesz odczuwać większą przyjemność zalecamy włączenie JS</h1></div>
+<h2>Wstęp</h2><div class="tekst">
+<p>Zdefiniowanych rodzajów piwa jest ponad 100, jednak biorąc pod uwagę fakt, że do każdego już istniejącego piwa można dodać jakiś nowy składnik, można zaryzykować stwierdzenie, że rodzajów piwa jest nieskończenie wiele. Piwo towarzyszy
+ludziom od tysięcy lat. W pozostałościach po cywilizacji Sumerów można odnaleść dowody, że spożywali oni piwo(jednak z pewnością nie było to taki trunek, jaki znamy dzisiaj).Wiele ludzi kojarzy piwo tylko i wyłącznie 
+z międzynarodowym jasnym lagerem. Nic w tym dziwnego. 90% sprzedanwanych piw na świecie to właśnie jasne lagery. Wyróżnia je złota barwa oraz smak zbliżony do wody. Niestety większość konsumentów nastawiona jest 
+na to, aby napić się jak najmniejszym kosztem. To tworzy popyt na piwa najtańsze i bez szlachetnego smaku. <a href="koncerny.html" target="_blank"  >Wielkie koncerny</a> dostosowały się do tej mody i stworzyły piwa, których produkcja kosztuje około 20
+groszy. Na szczęście od kilku lat trendy zaczynają się zmieniać i coraz więcej osób próbuje czegoś nowego. Piwa ciemne, pszeniczne, podwójnie chmielone oraz niepasteryzowane z roku na rok zyskują coraz więcej sympatyków.
+<a href="krafty.html" >Piwa kraftowe</a>, czyli takie z najmniejszych browarów potrafią kosztować sporo więcej. Jednak, jak to mawia <a href="https://www.youtube.com/watch?v=zxD31jsiyu8&t=57s" target="_blank">Tomasz Kopyra</a> "Życie jest za krótkie, aby pić słabe piwo".</p>
+</div>
+
+<h2>October fest</h2>
+<p>Zdecydowanie najbardziej znany festiwal piwa na świecie. Jest organizowany co roku  w Monachium(Bawaria)> Jest to najwieksza impreza ludowa na świecie.W ostatnich latach przeciętna liczba odwiedzających wynosiła ok. 6 milionów ludzi.
+Do roku 1871 odbywał się w październiku, natomiast od roku 1872 początek imprezy został przesunięty na wrzesień. W trakcie trwania festynu spożywane jest około 5 milionów litrów piwa, sprzedawanego tradycyjnie w litrowych kuflach tzw. Maßkrug.
+Podczas festnynu sprzedawany jest jeden rodzaj piwa- piwo marcowe. </p>
+<table  id="para" >
+<tr>
+<td class="imgmenu"  style="background:url(zdjecia/october.jpg) repeat scroll 0%; " id="img1"></td>
+<td class="imgmenu"  style=" background:url(zdjecia/october2.jpg) repeat scroll 0%;" id="img2" ></td>
+<td class="imgmenu"  style=" background:url(zdjecia/october3.jpg) repeat scroll 0%; " id="img3" ></td>
+<td class="imgmenu" style=" background:url(zdjecia/october4.jpg) repeat scroll 0%; " id="img4" ></td>
+</tr>
+<tr><td colspan=3><div  id="dumdiv">
+  <a href="http://www.hscripts.com" id="dum" style="text-decoration:none; color: #3d366f;">&copy;h</a>
+  </div>
+</td></tr>
+</table>
+
+<h2>Tomasz Kopyra</h2>
+Można o nim opowiadać bez końca, dlatego umieszczamy tylko link do jego <a href="https://blog.kopyra.com/" target="_blank">bloga</a>. Jeżeli, jesteś zainteresowany tematem piwa, to kanał youtube pana Toamsza to miejsce idealne dla Ciebie!
+
+
+<div id ="animacja"><img src="zdjecia/prazubr.jpg" alt="kopyra" /></div>
+</div>
+<footer>
+Dawid Rezmer nr 184250 &copy; Wszelkie prawa zastrzeżone.
+</footer>
+</div>
+</body>
+
+
+
+
+
+</html>

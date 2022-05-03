@@ -1,0 +1,183 @@
+body{
+	background-color: #404040;
+	font-family:Arial, sans-serif;	
+	
+}
+.active{
+	color:#b300b3;
+	background-color:red;
+}
+
+#container{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	
+	
+	
+	
+	
+	
+	
+}
+header{
+	color:white;
+	font-size:40px;
+	margin-top:15px;
+	font-weight:800;
+	
+	
+	
+	
+	
+	
+	
+}
+
+#tekst{
+	
+	margin-left: auto;
+	margin-right: auto;
+	font-size:20px;
+
+	
+}
+#obraz{
+	float:left;
+	padding:5px;
+	width:20%;
+}
+nav{
+	
+	float: left;
+	width: 24%;
+	min-height: 300px;
+	padding:20px;
+	background-color: lightgray;
+	text-align: center;
+	font-size: 18px;
+	border-right: 2px dotted #666666;
+	
+	
+}#content{
+	float: left;
+	padding: 40px;
+	width: 60%;
+	background-color: #dedede;
+	
+	text-align: justify;
+	min-height:1000px;
+	
+	
+}footer{
+	margin-top:40px;
+	clear:both;
+	height:20px;
+	background:black;
+	color:white;
+	text-align:center;
+	width:100%;
+
+	
+	
+	
+}
+.optionT:hover{
+	color:red;
+
+cursor:	pointer;
+background-color: black;
+}
+	.optionL{
+		padding:15px;
+	min-width:12%;
+
+	border-bottom:3px dotted black;
+	
+	}
+	#topbar{
+	background-color: #128870;
+	color: white;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	height: 120px;
+	
+	
+}
+.odnosnik{
+	font-size: 16px;
+	
+}
+.odnosik:hover{
+	color:red;
+
+cursor:	pointer;
+background-color: black;
+}
+
+	.zdjecie{
+		float:right;
+		left:10px;
+		top:10px;
+		margin:10px;
+
+
+	}
+
+.paragraf{
+	margin-top: 100px;
+	padding:8px;
+}
+#tabela
+{
+	
+	text-align:center;
+	margin-top:20px;
+	
+	
+}
+.komorka1 {
+	border-right: 1px solid black;
+	border-left:1px solid black;
+	border-bottom: 1px solid black;
+	width:20%;
+	float:left;
+	border-top:1px solid black;
+}
+a{
+	text-decoration:none;
+}
+.komorka2 {
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	width: 38%;
+	float: left;
+		border-top:1px solid black;
+}
+.linia{
+	min-height:50px;
+	
+	text-align:center;
+	
+	
+	
+}
+.komorka3 {
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	width: 40%;
+	float: left;
+		border-top:1px solid black;
+}	
+@media only screen and (max-width: 768px) {
+	
+
+	nav {
+		width:100%;
+	}
+	#content{width:100%;}
+	#tabela{display:none;}
+	#naglowek{display:none;}
+}
+	
